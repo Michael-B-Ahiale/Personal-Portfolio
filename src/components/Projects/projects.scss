@@ -1,0 +1,75 @@
+@import '../../app.scss';
+.projectItem{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+  margin-top: 15px;
+  padding: 40px 30px;
+  margin: 10px 80px 20px;
+  max-width: 1366px;
+  @include mobile{
+    margin-top: 15px;
+  padding: 0px 0px;
+    align-items: start;
+    margin: 0px 20px 0px;
+    height: 55vh;
+    gap: 20px;
+    margin-bottom:50px;
+    flex-direction: column;
+    
+  }
+  
+ 
+  .projectText{
+
+    button{
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.projects{
+position: relative;
+  .progress{
+position: sticky;
+top: 0;
+left: 0;
+padding-top: 50px;
+text-align: center;
+font-size: 36px;
+color: rgb(37, 74, 113);
+
+@include mobile{
+  position: static;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.progressBar{
+  height: 6px;
+  border-radius: 10px;
+  background-color: white;
+  @include mobile{
+  
+    height: 3px;
+  }
+}
+  }
+}
+
+img{
+  height: 60%;
+  width: 50%;
+  @include mobile{
+    height: 250px;
+    width: auto;
+    
+  }
+}

@@ -1,0 +1,93 @@
+@import '../../app.scss';
+
+.About{
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  @include mobile{
+    height: 80vh;
+  }
+}
+
+.aboutcontent{
+  background-color: rgb(20, 40, 62);
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 40px;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  max-width: 1360px;
+  color: rgb(8, 7, 33);
+  text-align: center;
+  gap: 80px;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column-reverse;
+      border-radius: 0;
+      gap: 30px;
+    }
+  
+
+  img{
+    height: 400px;
+    padding: 8px;
+    border: 10px solid white;
+    width: auto;
+    filter: brightness(.7);
+    border-radius: 80%;
+    @include mobile{
+      height: 200px;
+      border-radius: 15px;
+      border: 0;
+    }
+  }
+
+  .aboutText{
+    max-width: 700px;
+    color: white;
+
+    h1{
+      color: aquamarine;
+      font-size: 35px;
+      font-weight: 600;
+    }
+  }
+
+  h3, h2{
+    text-align: center;
+    color: #4c0c79;
+  }
+
+}
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  gap: 15px;
+  flex-direction: row;
+  font-size: 20px;
+  @include mobile{
+    gap: 8px;
+    font-size: 17px;
+    line-height: 15px;
+  }
+}
+p{
+  font-size: 25px;
+  line-height: 60px;
+
+  @include mobile{
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

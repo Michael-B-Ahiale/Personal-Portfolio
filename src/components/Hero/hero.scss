@@ -1,0 +1,137 @@
+@import '../../app.scss';
+
+
+.hero{
+  height:calc(100vh - 100px);
+  scroll-snap-align: center;
+  @include mobile{
+    margin-top: 40px;
+   }
+  
+ .herowrapper{
+  
+  max-width: 1300px;
+  display: flex;
+  
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  @include mobile{
+    height: 50%;
+    width: 100%;
+    flex-direction: column-reverse;
+  
+  }
+
+ }
+ 
+  .herotext{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    @include mobile{
+      height: 50%;
+      width: 100%;
+      align-items: center;
+      padding: 20px;
+      gap: 25px;
+     }
+
+    h2{
+      letter-spacing: 10px;
+      font-size: 30px;
+      color: #4c0c79;
+      @include mobile{
+       font-size: 20px;
+      }
+      
+    }
+    h1{
+      font-size: 88px;
+      color: rgb(20, 40, 62);;
+      @include mobile{
+        font-size: 25px;
+       }
+    }
+
+    p{
+      font-size: 25px;
+      font-weight: 600;
+      @include mobile{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: 200;
+       }
+    }
+
+    img{
+      border: none;
+      height: 50px;
+      width: 50px;
+     margin-top: 15px;
+    }
+
+    
+  }
+
+
+ .heroimg{
+  border-radius: 50%;
+  
+ }
+  img{
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+    height: 400px;
+    width: 400px;
+    @include mobile{
+      height: 200px;
+    width: 200px;
+     }
+    
+  }
+
+}
+
+.herobtn{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+
+  button{
+    background-color: white;
+    color:black;
+    background-image: url(/public/topography.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15px;
+    position: inherit;
+    width: auto;
+    height: auto;
+    transition: 0.7s;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    @include mobile{
+      font-size: 15px;
+      padding: 6px;
+      &:active{
+        background-color: white;
+        color:black; 
+      }
+     }
+  }
+
+  button:hover{
+    background-color: rgb(80, 67, 230);
+    color:white;
+    scale: 1.1;
+
+  }
+  
+}
