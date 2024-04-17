@@ -2,7 +2,7 @@ import './about.scss'
 import { useEffect } from 'react'
 import { useAnimation,motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-
+import myImage from "../../assets/Michael.jpg";
 
 const aboutVariants={
   visible:{opacity:1, scale:1, transition:{duration:1}},
@@ -28,7 +28,7 @@ useEffect(()=>{
       ref={ref}
       className="aboutcontent">
         <div className="aboutImage">
-          <img src="src\assets\Michael.jpg" alt="Michael" />
+          <img src={myImage} alt="Michael" />
         </div>
       <div className="aboutText">
         <h1>About Me!</h1>
