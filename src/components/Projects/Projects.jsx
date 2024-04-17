@@ -4,7 +4,7 @@ import './projects.scss';
 
 import signInPageImage from '../../assets/sign in page.png';
 import unsplashImage from '../../assets/proj2.jpg';
-// Import other images similarly
+
 
 const items = [
   {
