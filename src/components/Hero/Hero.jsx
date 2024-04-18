@@ -1,6 +1,6 @@
 import './hero.scss'
 import { motion } from 'framer-motion'
-
+import me from '../../../public/Me.png'
 
 const textVariants={
   initial:{
@@ -30,6 +30,7 @@ const Hero = () => {
   return (
     
     <div className='hero'>
+  
     <div className='herowrapper'>
       <motion.div className="herotext" variants={textVariants} initial='initial' animate='animate'>
         <motion.h2 variants={textVariants}>MICHAEL AHIALE</motion.h2>
@@ -42,7 +43,7 @@ const Hero = () => {
         <motion.img animate='scrollBtn'  variants={textVariants} src="/scroll.png" alt="" />
       </motion.div>
       <div className="heroimg">
-        <img src="/Me.png" alt="" />
+        <img src={me} alt="" />
       </div>
     </div>
     </div>

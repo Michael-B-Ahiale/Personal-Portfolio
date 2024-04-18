@@ -4,6 +4,7 @@
 .hero{
   height:calc(100vh - 100px);
   scroll-snap-align: center;
+  background-image: url(/public/topography.svg);
   @include mobile{
     margin-top: 40px;
    }

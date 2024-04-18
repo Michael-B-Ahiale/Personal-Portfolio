@@ -1,0 +1,10 @@
+@import '../../app.scss';
+
+.linkpro{
+  @include mobile{
+  
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+   }
+}

@@ -3,6 +3,10 @@ import { motion } from 'framer-motion'
 import './contact.scss'
 import emailjs from '@emailjs/browser';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faTwitter,faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
 const variants={
   initial:{
     y:500,
@@ -40,6 +44,7 @@ const Contact = () => {
     };
 
   return (
+   
     <motion.div className='contact' variants={variants} initial='initial' whileInView='animate'>
       <motion.div className="contactText" variants={variants}>
         <motion.h1 variants={variants}>Let's work on your project</motion.h1>
@@ -52,9 +57,9 @@ const Contact = () => {
           <span>+233200191355</span>
         </motion.div>
         <motion.div className="socials" variants={variants}>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+          <a href="https://twitter.com/MikeThenigma"><FontAwesomeIcon icon={faTwitter} style={{height:'40px',width:'40px'}}/></a>
+          <a href="https://github.com/Michael-B-Ahiale"><FontAwesomeIcon icon={faGithub} style={{height:'40px',width:'40px'}}/></a>
+          <a href="http://www.linkedin.com/in/michael-ahiale-574b7720a "><FontAwesomeIcon icon={faLinkedin} style={{height:'40px',width:'40px'}}/></a>
         </motion.div>
       </motion.div>
       <div className="contactForm">
@@ -67,7 +72,10 @@ const Contact = () => {
           {sucess && 'Success'}
         </form>
       </div>
+      
     </motion.div>
+    
+  
   )
 }
 
