@@ -2,7 +2,8 @@ import React, { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import './contact.scss'
 import emailjs from '@emailjs/browser';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faTwitter,faGithub,faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -24,9 +25,10 @@ const variants={
 const Contact = () => {
 
   const formRef =useRef()
-  const [error, setError]=useState(false);
-  const [sucess, setSuccess]=useState(false);
 
+  const resetForm = () => {
+    formRef.current.reset(); 
+};
   
     const sendEmail = (e) => {
       e.preventDefault();
@@ -35,12 +37,14 @@ const Contact = () => {
         .sendForm('service_7yx24zg', 'template_ktjxx3b', formRef.current,{publicKey:'73HygmtCbz8XRfrm_',})
         .then(
           () => {
-           setSuccess(true);
+            toast.success('Message sent successfully!');
+            resetForm();
           },
           (error) => {
-            setError(true);
+            toast.error('Error submitting message!');
           },
         );
+
     };
 
   return (
@@ -68,8 +72,7 @@ const Contact = () => {
           <input type="email" required placeholder='Email' name='mail'/>
           <textarea name="message" id="" cols="30" rows="10" placeholder='Leave a message'/>
           <button>Submit</button>
-          {error && 'Error'}
-          {sucess && 'Success'}
+          <ToastContainer />
         </form>
       </div>
       

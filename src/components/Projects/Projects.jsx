@@ -9,9 +9,9 @@ import unsplashImage from '../../assets/proj2.jpg';
 const items = [
   {
     id: 1,
-    title: 'stuvent',
+    title: 'stayEdu',
     img: signInPageImage,
-    desc: 'lofem sdfsij sdfswfjoweifj dsfuhsefoiwjfi sdfhuiowejf sfishfuwefuwif ',
+    desc: 'The website of stayEdu. A Ghanaian NGO that focuses on educating the youth through different media  ',
   },
   {
     id: 2,
