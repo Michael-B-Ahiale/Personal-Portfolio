@@ -54,12 +54,14 @@
       color: rgb(20, 40, 62);;
       @include mobile{
         font-size: 25px;
+        text-align: center;
        }
     }
 
     p{
       font-size: 25px;
       font-weight: 600;
+      line-height: 35px;
       @include mobile{
         font-size: 20px;
         line-height: 25px;
