@@ -1,6 +1,6 @@
 @import '../../app.scss';
 .projectItem{
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,11 +24,14 @@
   
  
   .projectText{
+    h2{
+      color: rgb(37, 74, 113);
+    }
     p{
       line-height: 25px;
       margin-bottom: 10px;
     }
-    button{
+    .github{
       background: transparent;
       border: 2px solid white;
       color: white;
@@ -41,7 +44,16 @@
         color: black;
         background-color: white;
       }
+
     }
+    .live{
+      background: gray !important;
+     border: 2px solid white;
+     color:black;
+     padding: 5px;
+     border-radius: 5px;
+     margin-right: 10px;
+     }
   }
 }
 
@@ -75,7 +87,7 @@ color: rgb(37, 74, 113);
 }
 
 img{
-  height: 50%;
+  height: 60%;
   width: auto;
   border-radius: 10px;
   @include mobile{

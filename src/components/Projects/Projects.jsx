@@ -12,12 +12,16 @@ const items = [
     title: 'stayEdu',
     img: signInPageImage,
     desc: 'The website of stayEdu. A Ghanaian NGO that focuses on educating the youth through different media. Built with Bootstrap  ',
+    github:'',
+    live:'',
   },
   {
     id: 2,
     title: 'Dogegram',
     img: unsplashImage,
     desc: 'A social media app created for pets. Front-end project built with react and the option to login and sign up',
+    github:'https://github.com/Michael-B-Ahiale/social',
+    live:'',
   },
   {
     id: 3,
@@ -35,8 +39,8 @@ const Single = ({ item }) => {
      <div className="projectText"> 
       <h2>{item.title}</h2>
       <p>{item.desc}</p>
-      <button>github</button>
-      <button>live</button>
+      <button className='github'><a href={item.github}>Code</a></button>
+      <button className='live'>live</button>
       </div>
     </section>
   );
@@ -51,7 +55,7 @@ const Projects = () => {
     
     <div className='projects' ref={ref}>
       <div className="progress">
-        <h1>Featured Projects</h1>
+        <h1>Projects</h1>
         <motion.div style={{ scaleX: scrollYProgress }} className="progressBar"></motion.div>
       </div>
       {items.map(item => (
