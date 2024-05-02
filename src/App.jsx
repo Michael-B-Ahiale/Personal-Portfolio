@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import { createContext } from "react";
+
+export const ThemeContext= createContext(null);
 
 const App = () => {
   return <div>

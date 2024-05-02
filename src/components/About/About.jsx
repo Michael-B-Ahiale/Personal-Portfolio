@@ -41,7 +41,7 @@ useEffect(()=>{
       <div className="aboutText">
         <h1>About Me!</h1>
       <motion.p>
-      Hey there! 👋 I'm Michael. A tech enthusiast passionate about technology.
+      Hey there! 👋 I'm Michael. A tech enthusiast and digital Explorer 🔎 .
       While I enjoy working with modern web technologies like React and Exchange Online, I'm continuously learning and growing in the field. 
       My goal is to create meaningful solutions and contribute positively to the tech community.
       Thank you for visiting my site!

@@ -34,8 +34,8 @@ const Hero = () => {
     <div className='herowrapper'>
       <motion.div className="herotext" variants={textVariants} initial='initial' animate='animate'>
         <motion.h2 variants={textVariants}>MICHAEL AHIALE</motion.h2>
-        <motion.h1 variants={textVariants}>Tech Enthusiast & Digital Explorer</motion.h1>
-        <motion.p variants={textVariants}>Curious, Creatively Driven, and Passionate About Crafting Digital Experiences</motion.p>
+        <motion.h1 variants={textVariants}>Microsoft 365 Support |<br /> Front-end Developer</motion.h1>
+        <motion.p variants={textVariants}>Curious, Creative, and Passionate About Crafting Digital Experiences</motion.p>
        <motion.div variants={textVariants} className="herobtn">
         <button variants={textVariants} ><a href="#Projects">Projects</a></button>
         <button variants={textVariants} ><a href="#Contact">Say Hello!</a></button>

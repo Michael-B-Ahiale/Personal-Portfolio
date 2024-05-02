@@ -8,6 +8,14 @@ import unsplashImage from '../../assets/proj2.png';
 
 const items = [
   {
+    id: 2,
+    title: 'Dogegram',
+    img: unsplashImage,
+    desc: 'A social media app created for pets. Front-end project built with react.',
+    github:'https://github.com/Michael-B-Ahiale/social',
+    live:'',
+  },
+  {
     id: 1,
     title: 'stayEdu',
     img: signInPageImage,
@@ -15,20 +23,7 @@ const items = [
     github:'',
     live:'',
   },
-  {
-    id: 2,
-    title: 'Dogegram',
-    img: unsplashImage,
-    desc: 'A social media app created for pets. Front-end project built with react and the option to login and sign up',
-    github:'https://github.com/Michael-B-Ahiale/social',
-    live:'',
-  },
-  {
-    id: 3,
-    title: 'stayEdu',
-    img: unsplashImage,
-    desc: 'lofem sdfsij sdfswfjoweifj dsfuhsefoiwjfi sdfhuiowejf sfishfuwefuwif ',
-  },
+
 ];
 
 const Single = ({ item }) => {
